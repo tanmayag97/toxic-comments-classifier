@@ -1,0 +1,9 @@
+pandas==0.25.0
+symphonyai-artifactor==0.8.0
+symphonyai-analytic-utils>=0.13.0
+numpy==1.18.1
+symphonyai-utils>=0.6.2
+requests==2.23.0
+pyyaml
+symphonyai-data-store-connectors==1.18.0
+symphonyai-ace-templates==0.1.4
