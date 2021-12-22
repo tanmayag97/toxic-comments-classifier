@@ -2,9 +2,6 @@
 
 
 
-
-
-
 # Virtual Environment Setup
 -   Create virtual environment
 
@@ -14,10 +11,3 @@
 -   Install dependencies: 
     
         pip install -r requirements.txt 
-
-
-   
-  
-
-
-
