@@ -1,4 +1,4 @@
-#This project is for setting up NRG Project #
+#This is for setting up toxic comments classifier project #
 
 
 
@@ -8,13 +8,12 @@
 # Virtual Environment Setup
 -   Create virtual environment
 
-        mkvirtualenv -p `which python3.6` nrg
+        mkvirtualenv -p `which python3.6` toxic-comments-classifier
  
 
--   Install dependencies: Create pip.conf from pip.conf.template with placeholders replaced
+-   Install dependencies: 
     
-        export PIP_CONFIG_FILE=pip.conf
-        pip install -r requirements.txt --extra-index-url https://pypi.python.org/simple
+        pip install -r requirements.txt 
 
 
    
