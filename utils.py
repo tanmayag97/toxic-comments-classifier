@@ -1,3 +1,6 @@
+import re
+import string
+
 def remove_URL(text):
     """
         Remove URLs from a sample string
@@ -320,10 +323,10 @@ def other_clean(text):
                         }
         
         
-                sample_typos_slang_pattern = re.compile(r'(?<!\w)(' + '|'.join(re.escape(key) for key in sample_typos_slang.keys()) + r')(?!\w)')
+        sample_typos_slang_pattern = re.compile(r'(?<!\w)(' + '|'.join(re.escape(key) for key in sample_typos_slang.keys()) + r')(?!\w)')
         sample_acronyms_pattern = re.compile(r'(?<!\w)(' + '|'.join(re.escape(key) for key in sample_acronyms.keys()) + r')(?!\w)')
         sample_abbr_pattern = re.compile(r'(?<!\w)(' + '|'.join(re.escape(key) for key in sample_abbr.keys()) + r')(?!\w)')
-        
+
         text = sample_typos_slang_pattern.sub(lambda x: sample_typos_slang[x.group()], text)
         text = sample_acronyms_pattern.sub(lambda x: sample_acronyms[x.group()], text)
         text = sample_abbr_pattern.sub(lambda x: sample_abbr[x.group()], text)
